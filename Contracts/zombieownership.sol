@@ -3,6 +3,12 @@ pragma solidity >=0.5.0 <0.6.0;
 import "./zombieattack.sol";
 import "./erc721.sol";
 
+/// @title A contract that manages transfering zombie ownership
+/// @author h3h
+/// @notice Explains to a user what the contract/function does.
+/// @dev Is for explaining extra details to developers. One of the most important.
+/// @param Describing what each parameter value of a function are for.
+/// @return Describing what each return value of a function are for.
 contract ZombieOwnership is ZombieAttack, ERC721 {
 
     mapping (uint => address) zombieApprovals;
